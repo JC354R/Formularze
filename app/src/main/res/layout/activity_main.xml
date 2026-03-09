@@ -1,19 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nowe Zweierze" />
+
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaj imie" />
+
+        <EditText
+            android:id="@+id/editTextImie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Podaj imie zwierzecua"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wybierz gromade" />
+
+        <Spinner
+            android:id="@+id/spinnerGromada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gromada"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wpisz gatunek" />
+
+        <EditText
+            android:id="@+id/editTextGatunek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="podaj gatunek" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWymarle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="czy Wymaerle" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tryb zycia" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonDzien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dzienny" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nocny" />
+        </RadioGroup>
+
+
+    <Switch
+        android:id="@+id/aswitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="czy domowy" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="maksymalny wiek" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dieta" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMieso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="miesozercy" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRosliny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="roslinozerny" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="waga" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="podaj wage"/>
+
+    <Button
+        android:id="@+id/buttonDodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj" />
+
+    <TextView
+        android:id="@+id/textViewKomunikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>
